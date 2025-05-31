@@ -1,7 +1,7 @@
 import os
 import shutil
 
-# --- Existing path functions (keeping them for robustness) ---
+
 def get_desktop_path_with_onedrive_compatibility():
     """
     Attempts to find the Desktop path, handling potential OneDrive redirection.
@@ -24,11 +24,11 @@ def get_downloads_path_with_onedrive_compatibility():
     standard_downloads_path = os.path.join(home_dir, 'Downloads')
     return standard_downloads_path
 
-# --- Get the actual paths ---
+
 desktop_path = get_desktop_path_with_onedrive_compatibility()
 downloads_path = get_downloads_path_with_onedrive_compatibility()
 
-# --- MODIFIED: Added Steam shortcuts and compressed files ---
+
 file_type_destinations = {
     '.jpg': 'Images',
     '.png': 'Images',
@@ -41,14 +41,10 @@ file_type_destinations = {
     '.ico': 'Images',
 
     '.lnk': 'Shortcuts',
-    '.url': 'Shortcuts', # General internet shortcuts
-    '.website': 'Shortcuts', # Some browser shortcuts
+    '.url': 'Shortcuts', 
+    '.website': 'Shortcuts', 
 
-    # Steam game shortcuts (these are typically .url files, but sometimes .url is too generic)
-    # Steam often creates .url files on the desktop that link to steam://rungameid/<ID>
-    # If you find .url is too broad, you might need a more specific check,
-    # but for now, they'll go to 'Shortcuts' with other .url files.
-    # Note: True Steam game shortcuts *inside* Steam's own folder often have no extension.
+
 
     '.mp4': 'Videos',
     '.mov': 'Videos',
@@ -73,14 +69,14 @@ file_type_destinations = {
     '.md': 'Documents',
     '.log': 'Documents',
 
-    # New additions for compressed files
+
     '.zip': 'Compressed',
     '.rar': 'Compressed',
     '.7z': 'Compressed',
-    '.tar': 'Compressed', # Tar archives
-    '.gz': 'Compressed',  # Gzip compressed files
-    '.bz2': 'Compressed', # Bzip2 compressed files
-    '.xz': 'Compressed',  # XZ compressed files
+    '.tar': 'Compressed', 
+    '.gz': 'Compressed', 
+    '.bz2': 'Compressed', 
+    '.xz': 'Compressed',  
 }
 
 main_organized_directory = os.path.join(desktop_path, "Sorted_Files")
