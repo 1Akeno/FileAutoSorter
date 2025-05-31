@@ -1,5 +1,5 @@
 ([('main.exe',
-   'C:\\Users\\Rokas\\Desktop\\mine\\CodingProjects\\AutoFileOrganizer\\build\\main\\main.exe',
+   'C:\\Users\\Rokas\\desktop\\mine\\codingprojects\\autofileorganizer\\build\\main\\main.exe',
    'EXECUTABLE'),
   ('python313.dll',
    'C:\\Users\\Rokas\\AppData\\Local\\Programs\\Python\\Python313\\python313.dll',
@@ -32,5 +32,5 @@
    'C:\\Users\\Rokas\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\libcrypto-3.dll',
    'BINARY'),
   ('base_library.zip',
-   'C:\\Users\\Rokas\\Desktop\\mine\\CodingProjects\\AutoFileOrganizer\\build\\main\\base_library.zip',
+   'C:\\Users\\Rokas\\desktop\\mine\\codingprojects\\autofileorganizer\\build\\main\\base_library.zip',
    'DATA')],)
