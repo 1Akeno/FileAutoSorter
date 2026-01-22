@@ -7,6 +7,9 @@
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=1Akeno/FileAutoSorter&type=date&legend=top-left" />
  </picture>
 </a>
+
+
+
 # My File Organizer
 
 This is a Python script designed to help you automatically organize files from your Desktop and Downloads folders into categorized subdirectories.
